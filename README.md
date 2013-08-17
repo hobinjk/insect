@@ -4,6 +4,14 @@ Insect is a proof-of-concept joint Firefox and Vim plugin which
 enables remote editing of document style sheets using the Remote
 Debugging Protocol.
 
+Demo
+----
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=CUAcDvmtICA"
+   target="_blank">
+   <img src="http://img.youtube.com/vi/CUAcDvmtICA/0.jpg"
+        alt="Insect Demo" width="240" height="180" border="10"/>
+</a>
+
 Requirements
 ------------
 * Vim 7.3+ with Python support
