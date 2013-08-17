@@ -1,0 +1,4 @@
+content   insect  content/
+skin      insect  classic/1.0   skin/
+locale    insect  en-US         locale/en-US/
+overlay chrome://browser/content/browser.xul chrome://insect/content/overlay.xul

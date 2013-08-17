@@ -1,0 +1,9 @@
+Insect
+
+After starting the firefox plugin, run `:call LoadSheets()` to load
+in the style sheets of the currently selected Firefox tab. Upon
+writing the files they will automatically update in Firefox.
+
+Experimental:
+Run :call LoadScripts() to load in the currently selected tab's
+JavaScript sources.

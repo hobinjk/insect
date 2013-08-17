@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<overlay id="insectOverlay"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <menupopup id="menu_HelpPopup">
+    <script src="insect.js" type="application/javascript;version=1.8"></script>
+    <menuitem label="Activate Insect" id="insect-menu-item" oncommand="Insect.start();"/>
+  </menupopup>
+</overlay>
