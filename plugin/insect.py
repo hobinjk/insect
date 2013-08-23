@@ -148,10 +148,16 @@ class Insect():
         if "source" in source:
           break
         source = self.comms.recv()
-      sheets.append({
-        "href": sheet["href"],
-        "source": source["source"]
-      })
+      if source is not None:
+        name = sheet["href"]
+        if name is None:
+          name = "inline"+str(sheet["styleSheetIndex"])
+        sheets.append({
+          "href": name,
+          "source": source["source"]
+        })
+        if sheet["href"] is None:
+          print sheet
     return sheets
 
   def update_sheets(self, newSheets):
@@ -161,6 +167,8 @@ class Insect():
     styleSheets = self.comms.recv()
     for sheet in styleSheets["styleSheets"]:
       actor = sheet["actor"]
+      if sheet["href"] is None:
+        sheet["href"] = "inline"+str(sheet["styleSheetIndex"])
       for newSheet in newSheets:
         if not newSheet["href"] == sheet["href"]:
           continue
